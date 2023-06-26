@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/perfil.css">
+
+    <script src="https://kit.fontawesome.com/e05c1d4d14.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="volver">
+    <a href="home.html">
+    <p><i class="fa-solid fa-arrow-left"></i> Volver a inicio</p> 
+    </a>
+</div>
+  <div class="container">
+
+    <div class="encabezado">
+      <img src="https://www.hotelbooqi.com/wp-content/uploads/2021/12/128-1280406_view-user-icon-png-user-circle-icon-png.png" height="250px">
+      <h3>Bienvenido Frank</h3>
+    </div>
+      <p>Aquí estan tus datos, si quieres actualizar alguno, da click en el botón que 
+        dice actualizar datos
+      </p>
+      <section class="listaDatos">
+        <ul>
+          <li><i class="fa-solid fa-user"></i> Frank David Henao</li>
+          <li><i class="fa-solid fa-envelope"></i> fdhs@correo.com</li>
+          <li><i class="fa-solid fa-phone"></i> 3052377976</li>
+        </ul>
+      </section>
+      
+        <!-- Modal trigger button -->
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+          <i class="fa-sharp fa-solid fa-user-pen"></i> Actualizar datos
+        </button>
+        <div class="actualizar">
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Actualización de datos</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-5 ">
+                  <label for="exampleFormControlInput1" class="col-form-label">Nombre</label>
+                  <input class="form-control" type="text" placeholder="Name" aria-label="default input example">
+                  
+                    <label for="exampleFormControlInput1" class="col-form-label">Correo</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  
+                  
+                    <label for="inputPassword" class=" col-form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword">
+                    
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-success">Guardar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Optional: Place to the bottom of scripts -->
+        <script>
+          const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+        
+        </script>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

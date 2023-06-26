@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F6F1F1;
+    background-image: url("../img/bg-new-wave.svg");
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* .wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+} */
+
+.sectionOne{
+    background-color: #d7e8f1 ;
+    border-radius: 15px;
+    top: 100px;
+    padding: 50px 50px 50px 50px;
+    margin: 50px 50px 50px 50px;
+    height: 900px;
+    box-shadow: rgba(0, 0, 0, 0.825) 0px 5px 15px;
+    
+}
+
+.card{
+    color: rgb(1, 1, 1);
+    background-color: #D0D6DA;
+    border-color: #343a40;
+    border-width: 3px;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+  .css-button-arrow--black {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 20px;
+    border: none;
+    background-color: #343a40;
+    margin-top: 20px;
+
+  }
+  .css-button-arrow--black:hover {
+    padding-right: 24px;
+    padding-left:8px;
+    border-radius: 20px;
+
+  }
+  .css-button-arrow--black:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  .css-button-arrow--black:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+  }
+
+

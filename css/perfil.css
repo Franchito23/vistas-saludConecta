@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(39, 38, 38);
+    color: aliceblue;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    text-align: left;
+    
+}
+
+.volver{
+    margin: 10px;
+
+}
+
+.listaDatos ul{
+    list-style: none;
+    padding: 15px;
+    margin: 5px;
+}
+
+.listaDatos li{
+    padding: 15px;
+    margin: 5px;
+}
+
+.listaDatos i{
+    font-size: 3vh;
+}
+
+.actualizar{
+    color: black;
+}
+

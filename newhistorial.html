@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/newhistorial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital@1&display=swap" rel="stylesheet">    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+</head>
+<body>
+    <div class="bienvenida">
+        <h1>Historial</h1>
+        <p>Aquí puedes ver todas las citas que has hecho!</p>
+    </div>
+    <?php foreach($registros as $fila): ?>
+    <form method="post">
+        <div class="card-container">
+          <div class="card">
+            <img src="img/doctor-bag.png" alt="Imagen 1">
+            <h2>Cita</h2>
+            <p>
+              <?php echo $fila->nombre_doc; ?>
+
+              <?php echo $fila->fecha_creacion; ?>
+
+                <?php echo $fila->fecha_cita; ?>
+
+                <?php echo $fila->motivo_cita; ?>
+
+                <?php echo $fila->nombreCompleto; ?>
+
+            </p>
+            <br>
+            <div class="card-buttons">
+              <button name="eliminar" type="submit" class="delete-button">
+                <i class="fa-solid fa-trash"></i> Eliminar
+              </button>
+              <button name="actualizar" type="submit" class="update-button">
+                <i class="fa-solid fa-pencil"></i> Actualizar
+              </button>
+            </div>
+          </div>
+
+          
+        </div>
+      </form>
+
+      <?php  
+      if (isset($_POST['eliminar'])) {
+          echo "<script>
+              Swal.fire({
+                  title: '¿Estás seguro?',
+                  text: 'Esta acción eliminará la cita',
+                  icon: 'warning',
+                  showCancelButton: true,
+                  confirmButtonText: 'Sí, eliminar',
+                  cancelButtonText: 'Cancelar'
+              }).then((result) => {
+                  if (result.isConfirmed) {
+                      window.location = 'eliminarCita.php?id=$fila->id_citas;'; 
+                  } else {
+                      window.location = 'historial.php'; 
+                  }
+              });
+          </script>";
+      }
+      ?>
+          
+      <?php endforeach; ?>
+
+      <script src="https://kit.fontawesome.com/e05c1d4d14.js" crossorigin="anonymous"></script>
+</body>
+</html>

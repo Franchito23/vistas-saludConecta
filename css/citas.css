@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(55, 57, 59);
+    color: rgb(246, 241, 241);
+}
+
+
+a{
+  text-decoration: none;
+  text-align: left;
+  
+}
+
+.volver{
+  margin: 10px;
+
+}
+
+
+.sectionOne{
+    background-color: rgb(63, 68, 70);
+    border-radius: 15px;
+    top: 100px;
+    padding: 50px 50px 50px 50px;
+    margin: 50px 50px 50px 50px;
+    height: 900px;
+    box-shadow: rgba(0, 0, 0, 0.825) 0px 5px 15px;
+}
+
+.sectionOne a{
+  color: white;
+}
+
+.login-box {
+    padding: 40px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+
+.formulario{
+    margin-top: 50px;
+}
+
+.date input{
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+}
+
+.actualizar{
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-top: 650px;
+}
